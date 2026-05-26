@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", "Inter", sans-serif;
+  --color-gold-accent: #c5a059;
+  --color-gold-light: #fdfcf0;
+  --color-bayou-dark: #081a14;
+  --color-bayou-mid: #0d2a21;
+}
+
+body {
+  background-color: var(--color-bayou-dark);
+  color: var(--color-gold-light);
+  font-family: var(--font-sans);
+}
