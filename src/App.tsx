@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, Heart } from 'lucide-react';
 
@@ -32,6 +32,10 @@ export default function App() {
     googleDriveUrl: 'https://drive.google.com/drive/folders/1bE_T9O_Z9_PruebaMagicaDeSofi',
     adminPin: 'admin',
   });
+
+  useEffect(() => {
+    document.title = `¡Mis Quince Años - ${config.birthdayGirl}!`;
+  }, [config.birthdayGirl]);
 
   return (
     <div className="min-h-screen text-[#fdfcf0] font-sans selection:bg-[#c5a059]/30 selection:text-[#fdfcf0] relative pb-12 flex flex-col items-center">
